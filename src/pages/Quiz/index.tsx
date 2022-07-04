@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import HeaderHome from "../../components/HeaderHome";
+import { useSnack } from "../../components/snackProvider";
 
 interface props {
   letter: string;
@@ -110,9 +111,16 @@ const Quiz = () => {
   const [success, setSuccess] = useState(false);
   const [corrects, setCorrects] = useState(0);
   const [pergunta, setPergunta] = useState(perguntas[0]);
+  const snack = useSnack()
 
   const handleQuestion = (pergunta: any, index: number) => {
-    if (pergunta.correct === index) setCorrects(corrects + 1);
+    if (pergunta.correct === index) {
+      setCorrects(corrects + 1);
+      snack.success("Correta")
+    } else {
+      snack.error("Incorreta")
+    }
+
     if (question === 10) setSuccess(true);
     else {
       setQuestion(question + 1);
