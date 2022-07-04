@@ -19,9 +19,9 @@ const Apoiadores = () => {
           justifyContent: "center",
         }}
       >
-        {items.map((item) => (
-          <Paper sx={styles.box} elevation={3}>
-            <Box component="img" src="/uniamerica.jpg" sx={{width: '200px', height: '200px'}}/>
+        {items.map((item, index) => (
+          <Paper sx={{...styles.box, backgroundImage: index % 2 === 0 ? 'url("/uniamerica.jpg")' : 'url("/rotary.png")',
+          backgroundPosition: 'center', backgroundSize: '100% 100%'}} elevation={3}>
           </Paper>
         ))}
       </Box>

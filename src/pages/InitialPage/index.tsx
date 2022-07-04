@@ -26,7 +26,7 @@ const InitialPage = () => {
   return (
     <Box sx={{ width: "100%", paddingBottom: '100px'}}>
 
-      <HeaderHome text={"Olá Fares!"}/>
+      <HeaderHome text={"Olá Fares!"} home={true}/>
 
       <Box sx={{ display: "flex", width: "100%" }}>
         <FlexHalfScreen>
