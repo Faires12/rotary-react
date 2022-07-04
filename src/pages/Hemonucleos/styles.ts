@@ -1,16 +1,16 @@
 const styles = {
     box: {
-        width: {xs: '80%', lg: '60%'}, 
+        width: '90%', 
         marginTop: {xs: '20px', lg: '40px'}, 
-        height: {xs: '300px', lg: '640px'},
+        height: '250px',
         background: 'linear-gradient(114.31deg, rgba(229, 147, 87, 0.9) 0%, rgba(213, 78, 59, 0.9) 79.06%)',
-        borderRadius: '20px', color: 'white', 
+        borderRadius: '20px', 
+        padding: {xs: '10px', lg: '20px'}, 
+        color: 'white', 
         display: 'flex', 
-        flexDirection: 'column', 
+        fontSize: '20px',
         justifyContent: 'space-between',
-        padding: {xs: '10px', lg: '20px'},
-        position: 'relative',
-        fontSize: '30px'
+        flexDirection: 'column'
     }
 }
 
