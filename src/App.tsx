@@ -4,14 +4,18 @@ import Home from './pages/Home';
 import './App.css'
 import Login from './pages/Login';
 import Register from './pages/Register';
+import { SnackProvider } from './components/snackProvider';
 
 function App() {
   return (
-   <Routes>
+    <SnackProvider>
+<Routes>
     <Route path="/home/*" element={<Home/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/register" element={<Register/>}/>
    </Routes>
+    </SnackProvider>
+   
   );
 }
 
