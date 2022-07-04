@@ -10,7 +10,7 @@ import Quiz from '../Quiz';
 
 const Home = () => {
   return (
-   <Box sx={{background: "#F5F5FA"}}>
+   <Box sx={{background: "#F5F5FA", height: '100vw'}}>
    <Routes>
     <Route path="/" element={<InitialPage/>}/>
     <Route path="/campanhas" element={<Campains/>}/>
