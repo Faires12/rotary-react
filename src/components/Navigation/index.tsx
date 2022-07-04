@@ -25,6 +25,7 @@ export default function Navigation() {
       "/home/campanhas": 2,
       "/home/apoiadores": 3,
       "/home/hemonucleos": 4,
+      "/home/quiz": 5,
     };
 
     setOpc(newOpc[location.pathname]);
@@ -37,7 +38,7 @@ export default function Navigation() {
         width: "100%",
         bottom: "0",
         left: "0",
-        background: "rgba(255, 255, 255, 0.75)",
+        background: "rgba(255, 255, 255)",
       }}
     >
       <Box
@@ -54,21 +55,21 @@ export default function Navigation() {
       >
         <NavOpc o>
           <ThumbUpIcon
-            sx={{ color: opc === 3 ? "#D54E3B" : "#C6C8CE" }}
+            sx={{ color: opc === 3 ? "#D54E3B" : "#C6C8CE", width: '40px', height: '40px' }}
             onClick={() => navigate("/home/apoiadores")}
           />
         </NavOpc>
         <NavOpc>
-          <StarIcon sx={{ color: opc === 2 ? "#D54E3B" : "#C6C8CE" }} onClick={() => navigate("/home/campanhas")}/>
+          <StarIcon sx={{ color: opc === 2 ? "#D54E3B" : "#C6C8CE", width: '40px', height: '40px'}} onClick={() => navigate("/home/campanhas")}/>
         </NavOpc>
         <NavOpc>
-          <BloodtypeIcon sx={{ color: opc === 1 ? "#D54E3B" : "#C6C8CE" }} onClick={() => navigate("/home")}/>
+          <BloodtypeIcon sx={{ color: opc === 1 ? "#D54E3B" : "#C6C8CE", width: '40px', height: '40px' }} onClick={() => navigate("/home")}/>
         </NavOpc>
         <NavOpc>
-          <QuizIcon sx={{ color: opc === 5 ? "#D54E3B" : "#C6C8CE" }} onClick={() => navigate("/home/quiz")}/>
+          <QuizIcon sx={{ color: opc === 5 ? "#D54E3B" : "#C6C8CE", width: '40px', height: '40px' }} onClick={() => navigate("/home/quiz")}/>
         </NavOpc>
         <NavOpc>
-          <AddLocationIcon sx={{ color: opc === 4 ? "#D54E3B" : "#C6C8CE" }} onClick={() => navigate("/home/hemonucleos")} />
+          <AddLocationIcon sx={{ color: opc === 4 ? "#D54E3B" : "#C6C8CE", width: '40px', height: '40px' }} onClick={() => navigate("/home/hemonucleos")} />
         </NavOpc>
       </Box>
     </Box>

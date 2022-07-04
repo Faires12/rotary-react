@@ -15,7 +15,7 @@ const HeaderHome = ({text, home} : props) => {
   return (
     <Paper sx={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: home ? 'center' : 'space-between', 
     padding: '40px', background: 'linear-gradient(114.31deg, rgba(229, 147, 87, 0.9) 0%, rgba(213, 78, 59, 0.9) 79.06%)',
-    color: 'white', fontSize: '40px', textAlign: 'center'}} elevation={3}>
+    color: 'white', fontSize: '40px', textAlign: 'right'}} elevation={3}>
       {!home && <ArrowBackIcon sx={{width: '50px', height: '50px'}} onClick={() => navigate("/home")}/>}
       <Box>
         {text}
